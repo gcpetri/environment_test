@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Metamorphoses</th>
+      <th>Title</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -13,7 +13,7 @@
   <tbody>
     <% @books.each do |book| %>
       <tr>
-        <td><%= book.Metamorphoses %></td>
+        <td><%= book.title %></td>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
